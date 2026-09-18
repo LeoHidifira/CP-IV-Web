@@ -1,0 +1,72 @@
+.detalhe-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+.detalhe-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  text-decoration: none;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.detalhe-voltar:hover {
+  color: var(--text-h);
+}
+
+.detalhe-content {
+  display: flex;
+  gap: 32px;
+  text-align: left;
+}
+
+.detalhe-content img {
+  width: 240px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.detalhe-info h1 {
+  margin: 0 0 8px;
+  text-align: left;
+}
+
+.detalhe-watched-at {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: var(--accent);
+}
+
+.detalhe-overview {
+  line-height: 160%;
+  margin-bottom: 16px;
+}
+
+.detalhe-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.detalhe-genres span {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+}
+
+@media (max-width: 640px) {
+  .detalhe-content {
+    flex-direction: column;
+  }
+
+  .detalhe-content img {
+    width: 160px;
+  }
+}
